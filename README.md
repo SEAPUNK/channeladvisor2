@@ -1,7 +1,7 @@
 channeladvisor2
 ===
 
-[ivan's](https://github.com/seapunk) fork and complete rewrite of the [node-channeladvisor](https://github.com/wankdanker/node-channeladvisor) library
+[ivan's](https://github.com/seapunk) complete rewrite of the [node-channeladvisor](https://github.com/wankdanker/node-channeladvisor) library
 
 ---
 
@@ -83,16 +83,3 @@ Example:
 ca.InventoryService.Ping (err, result) ->
     console.log result
 ```
-
-note
----
-
-I am not affiliated in any way with ChannelAdvisor.
-This library is named "channeladvisor2" to specify that this is a derivative of
-the "channeladvisor" library, and so people can find this library easier.
-
-
-license
----
-
-MIT
