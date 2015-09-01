@@ -1,0 +1,36 @@
+{
+  "name": "channeladvisor2",
+  "version": "0.2.2",
+  "description": "API wrapper for ChannelAdvisor's SOAP service",
+  "main": "index.js",
+  "dependencies": {
+    "soap": "^0.9.1",
+    "async": "^1.4.2"
+  },
+  "scripts": {
+    "prepublish": "grunt build"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "^0.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/seapunk/channeladvisor2.git"
+  },
+  "keywords": [
+    "channel",
+    "advisor",
+    "api",
+    "wrapper",
+    "soap",
+    "channeladvisor"
+  ],
+  "author": "Ivan K",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seapunk/channeladvisor2/issues"
+  },
+  "homepage": "https://github.com/seapunk/channeladvisor2"
+}
