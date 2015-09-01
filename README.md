@@ -11,6 +11,7 @@ While it is pretty simple to use the `soap` module to make SOAP calls to
 ChannelAdvisor, there is some boilerplate for setting up the clients which
 this project aims to eliminate.
 
+*examples are written in [coffeescript](http://coffeescript.org/)*
 
 ```coffeescript
 
