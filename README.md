@@ -11,19 +11,20 @@ While it is pretty simple to use the `soap` module to make SOAP calls to
 ChannelAdvisor, there is some boilerplate for setting up the clients which
 this project aims to eliminate.
 
-*examples are written in [coffeescript](http://coffeescript.org/)*
+```javascript
 
-```coffeescript
+var channeladvisor = require('channeladvisor2')
 
-channeladvisor = require('channeladvisor2')
-
-opts =
-    developerKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+var opts = {
+    developerKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
     password: "Password!123"
+}
 
-channeladvisor.create opts, (err, ca) ->
-    ca.AdminService.GetAuthorizationList (err, result) ->
-        console.log result
+channeladvisor.create(opts, function(err, ca){
+    ca.AdminService.GetAuthorizationList(function(err, result){
+        console.log(result)
+    })
+})
 
 ```
 
@@ -32,6 +33,13 @@ install
 
 ```bash
 npm install channeladvisor2
+```
+
+build
+---
+
+```bash
+grunt build
 ```
 
 api
@@ -67,12 +75,12 @@ Each method takes an optional `args` object and a required callback function.
 
 Example:
 
-```coffeescript
-opts =
-    localID: 9999999
+```javascript
+var opts = {localID: 9999999}
 
-ca.AdminService.RequestAccess opts, (err, result) ->
-    console.log result
+ca.AdminService.RequestAccess(opts, function(err, result){
+    console.log(result)
+})
 ```
 
 If the operation does not require any arguments then you may just specify the
@@ -80,7 +88,8 @@ callback function.
 
 Example:
 
-```coffeescript
-ca.InventoryService.Ping (err, result) ->
-    console.log result
+```javascript
+ca.InventoryService.Ping(function(err, result){
+    console.log(result)
+})
 ```
