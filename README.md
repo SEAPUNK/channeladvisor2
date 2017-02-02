@@ -1,6 +1,8 @@
 channeladvisor2
 ===
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/xbpf/channeladvisor2.svg)](https://greenkeeper.io/)
+
 [ivan's](https://github.com/seapunk) complete rewrite of the [node-channeladvisor](https://github.com/wankdanker/node-channeladvisor) library
 
 ---
